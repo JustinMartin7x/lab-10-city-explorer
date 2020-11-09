@@ -1,0 +1,25 @@
+{
+  "name": "lab-10-city-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinMartin7x/lab-10-city-explorer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustinMartin7x/lab-10-city-explorer/issues"
+  },
+  "homepage": "https://github.com/JustinMartin7x/lab-10-city-explorer#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "superagent": "^6.1.0"
+  }
+}
