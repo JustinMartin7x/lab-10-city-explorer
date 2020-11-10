@@ -36,6 +36,7 @@ function mungeTrails(trails) {
 }
 function mungeReviews(location) {
     return location.businesses.map(item => {
+
         return {
 
             "name": item.alias,
