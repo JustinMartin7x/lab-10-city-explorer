@@ -34,4 +34,16 @@ function mungeTrails(trails) {
         }
     }).slice(0, 8);
 }
+function mungeReviews(location) {
+    return location.businesses.map(item => {
+        return {
+
+            "name": item.alias,
+            "image_url": item.image_url,
+            "price": item.price,
+            "rating": item.rating,
+            "url": item.url
+        };
+    }).slice(0, 8);
+}
 module.exports = { mungeLocation, mungeWeather, mungeTrails }
