@@ -67,5 +67,28 @@ describe('app routes', () => {
       expect(data).toEqual(expectation);
 
     });
+    test('return information on portland', async () => {
+
+      const expectation =
+      {
+        'formatted_query': 'Portland, Multnomah County, Oregon, USA',
+        'latitude': '45.5202471',
+        'longitude': '-122.6741949',
+      };
+
+      const data = await fakeRequest(app)
+        .get('/location/')
+        .expect('Content-Type', /json/)
+        .expect(200);
+
+      expect(data.body).toEqual(expectation);
+    });
+
+
+
+
+
+
+
   });
 });
