@@ -5,4 +5,15 @@ function mungeLocation(location) {
         'longitude': location[0].lon
     };
 }
-module.exports = { mungeLocation }
+
+function mungeWeather(location) {
+    return location.data.map(item => {
+        return {
+            'forecast': item.weather.description,
+            'time': item.datetime
+        };
+    }
+
+    ).slice(0, 8);
+}
+module.exports = { mungeLocation, mungeWeather }
